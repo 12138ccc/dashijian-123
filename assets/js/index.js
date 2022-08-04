@@ -20,7 +20,7 @@ const renderAvatar = (data) => {
   // 按需渲染用户头像
   if (data.user_pic !== null) {
     // 渲染图片头像
-    $(".layui-nav-img").attr("src", user.user_pic).show();
+    $(".layui-nav-img").attr("src", data.user_pic)
     $(".text-avatar").hide();
   } else {
     // 渲染文本头像
