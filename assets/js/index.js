@@ -1,4 +1,4 @@
-const getUserInfo = () => {
+function getUserInfo() {
   $.ajax({
     type: "GET",
     url: "/my/userinfo",
@@ -10,7 +10,7 @@ const getUserInfo = () => {
       renderAvatar(res.data);
     },
   });
-};
+}
 // 渲染用户头像
 const renderAvatar = (data) => {
   // 获取用户名字
